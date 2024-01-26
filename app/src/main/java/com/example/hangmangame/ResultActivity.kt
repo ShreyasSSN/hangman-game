@@ -15,14 +15,13 @@ class ResultActivity : AppCompatActivity() {
         val view = resultBinding.root
         setContentView(view)
 
-        var score = intent.getStringExtra("score")
-        if (score != null) {
-            if (score.toInt() > 0){
-                resultBinding.textViewScore.text = "score : " + score.toString()
+        var score = intent.getIntExtra("score", 0)
+            if (score != 0){
+                resultBinding.textViewScore.text = "score : $score"
             }else{
+                resultBinding.textViewScore.isVisible = false
                 resultBinding.imageViewResult.setImageResource(R.drawable.loser)
             }
-        }
 
         resultBinding.buttonStartGame.setOnClickListener {
             val intent = Intent(this@ResultActivity, MainActivity::class.java)
