@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hangman Game</string>
+    <string name="how_to_play">How to play</string>
+    <string name="answer_text">h_a_n_g_m_a_n\ng_a_m_e</string>
+    <string name="how_to_play_game">I have a word and you have to guess it by
+        guessing letters.\n\nEach incorrect guess brings you closer to being the person below \"HANGED\".Basically you have 7 guesses.\n\n\nHint: Start with vowels 🤫.</string>
+    <string name="result">Result</string>
+</resources>

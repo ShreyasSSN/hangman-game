@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="@string/answer_text"
+        android:textAllCaps="true"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/how_to_play"
+        android:focusable="true"
+        app:backgroundTint="@color/Matisse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/how_to_play" />
+
+    <Button
+        android:id="@+id/buttonHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:text="Hint"
+        android:textColor="?attr/colorOnPrimary"
+        android:backgroundTint="?attr/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="A"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="B"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonC"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="C"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="D"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonE"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="E"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonF"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="F"
+                android:textColor="?attr/colorOnPrimary" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonG"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="G"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonH"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="H"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonI"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="I"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonJ"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="J"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonK"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="K"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonL"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="L"
+                android:textColor="?attr/colorOnPrimary" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonM"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="M"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonN"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="N"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonO"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="O"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonP"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="P"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonQ"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="Q"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonR"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="R"
+                android:textColor="?attr/colorOnPrimary" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonS"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="S"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonT"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="T"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonU"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="U"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonV"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="V"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonW"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="W"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonX"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="X"
+                android:textColor="?attr/colorOnPrimary" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonY"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="Y"
+                android:textColor="?attr/colorOnPrimary" />
+
+            <Button
+                android:id="@+id/buttonZ"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="10dp"
+                android:text="Z"
+                android:textColor="?attr/colorOnPrimary" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView_hangman"
+        android:layout_width="408dp"
+        android:layout_height="232dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:srcCompat="@drawable/hangman_default" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

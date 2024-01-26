@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HangmanGame" parent="Theme.Material3.DayNight.NoActionBar">
+            <!-- Primary Color. -->
+            <item name="colorPrimary">@color/white</item>
+            <item name="colorPrimaryVariant">@color/grey</item>
+            <item name="colorOnPrimary">@color/black</item>
+            <!-- Secondary Color. -->
+            <item name="colorSecondary">@color/white</item>
+            <item name="colorSecondaryVariant">@color/grey</item>
+            <item name="colorOnSecondary">@color/white</item>
+            <!-- Status bar Color. -->
+            <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+            <item name="android:background">?attr/colorOnPrimary</item>
+            <!-- Customize your theme here. -->
+    </style>
+</resources>
