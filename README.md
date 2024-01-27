@@ -9,4 +9,4 @@ A simple hangman game.
 ## Problem
 The words are saved in the application itself. So, application size will be more.
 ## Download
-[hangman_game.apk](https://github.com/ShreyasSSN/hangman-game/releases/download/v1.0.0/hangman_game.apk)
+[hangman_game.apk](https://github.com/ShreyasSSN/hangman-game/releases/download/v.1.1.0/hangman_game.apk)
