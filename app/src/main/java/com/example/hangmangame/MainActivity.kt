@@ -1,6 +1,7 @@
 package com.example.hangmangame
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
@@ -54,6 +55,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startGame() {
+        imageNumber = 0
+        mainBinding.imageViewHangman.setImageResource(R.drawable.hangman_default)
         mainBinding.textView.text = ""
         questionNumber = (0..lengthOfDictionary).random()
         question = WordData.hangmanList[questionNumber].key.uppercase()
@@ -69,7 +72,6 @@ class MainActivity : AppCompatActivity() {
             button.isClickable = true
             shapeDrawable = button.background as GradientDrawable
             shapeDrawable.setColor(Color.GRAY)
-
         }
         mainBinding.textView.text = questionView
     }
@@ -90,6 +92,7 @@ class MainActivity : AppCompatActivity() {
             mainBinding.textView.text = questionView
             if ('_' !in questionView){
                 score++
+                println(score)
                 questionView = ""
                 showAlertDialog()
             }
